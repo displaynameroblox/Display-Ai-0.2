@@ -17,3 +17,5 @@ note: this was for a roblox game and not a website
 note2: this is not a fully working code, i have tried my best to make it work but i don't have server hosting so i can't test it out, if you want to make it work you can try to fix the errors and make it work, i will not try to fix the error any soon maybe in the coming years. i hope you like it!
 
 also if you somehow got it working i would like if you send me a video of it working, i would be really happy! X.com @itz_Displayname
+
+this would be updated soon
