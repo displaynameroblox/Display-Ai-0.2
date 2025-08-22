@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body{background:#080808;color:#eaeaea;font-family:Inter,system-ui,sans-serif;margin:0;padding:20px;}
+    header{display:flex;align-items:center;gap:16px;}
+    .brand{font-weight:700;font-size:20px}
+    .controls{margin-left:auto;display:flex;gap:8px}
+    .btn{background:#f55;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;display:inline-block}
+    .panel{margin-top:18px;background:#0f0f0f;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .meta{color:#aaa;font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Catboy AI Dashboard</div>
+    <div class="meta">Signed in as <strong><%= username %></strong></div>
+    <div class="controls">
+      <a class="btn" href="/chat">Chat</a>
+      <a class="btn" href="/settings">Settings</a>
+      <a class="btn" href="/moderator">Moderator</a>
+    </div>
+  </header>
+
+  <div class="panel">
+    <h3 style="margin:0 0 8px 0">AI Overview</h3>
+    <p>AI name: <strong><%= user.aiName || "Display" %></strong></p>
+    <p class="meta">Personality instruction (preview):</p>
+    <pre style="background:#090909;padding:12px;border-radius:8px;color:#ddd;white-space:pre-wrap"><%= (user.personality || "No personality set") %></pre>
+  </div>
+
+  <div style="margin-top:14px;color:#999;font-size:13px">Use the <strong>Chat</strong> page to talk to the AI. The API is at <code>/chat</code>.</div>
+</body>
+</html>
